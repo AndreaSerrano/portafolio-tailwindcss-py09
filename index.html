@@ -4,19 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Portafolio tailwind</title>
 </head>
 
 <body>
-    <nav>
+    <nav class="w-full text-black font-semibold flex justify-between items-center px-6">
         <a href="">
-            <img id="logo-home" src="assets/images/logo.PNG" alt="Logo Andy">
+            <img class="h-16" id="logo-home" src="assets/images/logo.PNG" alt="Logo Andy">
         </a>
         <div>
-            <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" class="mr-md">Bio</a>
-            <a href="" class="mr-md">Contacto</a>
+            <a href="">Bio</a>
+            <a href="">Contacto</a>
         </div>
     </nav>
 
+    <section class="flex justify-around items-center" id="hero-home">
+        <div>
+            <h2 class="text-4xl font-bold">Andrea Serrano Rivera</h2>
+            <h2 class="text-3xl font-semibold">Ing. en Sistemas y Comunicaciones</h2>
+            <button class="h-[30px] mt-7 text-black text-sm font-semibold bg-white border-2 border-black" type="button" name="button" id="btn">Haz click aquí</button>
+        </div>
+        <img src="https://cdn.pixabay.com/photo/2021/03/27/06/31/code-6127616_960_720.png" alt="Imagen hero-home">
+    </section>
+
+    <section id="about-me-section" class="flex flex-col items-center justify-around text-center h-[550px] w-full text-white bg-[#252525] p-[15px] mt-[3%]">
+        <h2 class="text-2xl font-bold">¿Quién soy?</h2>
+    
+        <img src="https://cdn.pixabay.com/photo/2019/08/10/02/34/am-4396115_960_720.png" alt="Imagen mobile" class="h-2/5 w-1/3">
+        
+        <h2 class="text-2xl font-bold">Andrea S. Rivera</h2>
+        
+        <p class= "text-justify"> 
+            Casi recién egresada de la carrera de Ing.Sistemas y Comunicaciones, digo "casi" porque solo 
+            me falta realizar la residencia para concluir con el plan de estudios. Respecto a lenguajes de
+            programación, me interesa principalmente Python ya se me hace un lenguaje fácil de leer y codificar
+            además de ser multiparadigma. Además del desarrollo web, tengo bastante interés por la ciencia de datos. 
+            
+        </p>
+    </section>
+
+    <section id="grid-example" class="grid mt-[3%]">
+        <h3 class="text-4xl place-self-center font-bold">Hobbies</h3> 
+        <div id="grid-container" class="grid h-[450px] w-full grid-cols-[40%_40%] grid-rows-[200px_200px] gap-[15px] justify-center mt-[2%]">
+            <div>
+                <p>
+                    Además de la programación, soy amante de la cocina. Constantemente estoy en busca de recetas 
+                    nuevas para cocinar y, por su puesto, probarlas (mi parte favorita). 
+                </p>
+            </div>
+            <div>
+                <p>
+                    La mayoría del tiempo me verás con audífonos. Ya sea escuchando música o podcasts, ayuda a mi 
+                    concentración. Si tienes alguna recomendación musical o algo por el estilo, no dudes en hacerlo :)
+                </p>
+            </div>
+            <div>
+                <p>
+                    Suelo ver demasiadas series y películas, mis preferidas son las de terror y thrillers. También me 
+                    gustan los documentales de cualquier tema. 
+                </p>
+            </div>
+            <div>
+                <p>
+                    Prefiero mil veces quedarme en casa a hacer cualquier cosa que salir de fiesta. Me gusta la 
+                    tranquilidad y comodidad del hogar aunque no está mal salir de vez en cuando a divertirse.
+                </p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
