@@ -1,0 +1,11 @@
+#hero-home{
+    background-image: url("https://cdn.pixabay.com/photo/2018/09/27/09/22/web-3706563_960_720.jpg");
+    background-size: cover;
+}
+
+#hero-home img{
+    width: 25%;
+    height: 60%;
+    border-radius: 100%;
+    border: 6px #fff solid;
+}
