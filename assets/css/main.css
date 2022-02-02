@@ -4,7 +4,18 @@ html, body {
     width: 100%;
   } 
 
+.slide-hobbies::-webkit-scrollbar{
+  width: 8px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #16d135;
+  border-radius: 5px;
+}
+
 #hero-home-image{
     background-image: url("https://cdn.pixabay.com/photo/2018/09/27/09/22/web-3706563_960_720.jpg");
     background-size: cover;
 }
+
