@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://kit.fontawesome.com/d6a9534079.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Portafolio tailwind</title>
 </head>
@@ -15,7 +16,7 @@
 <body>
     <nav class="w-full bg-black font-semibold px-2 flex justify-between items-center flex-wrap fixed">
         <a href="" class="w-2/5">
-            <img id="logo-home" src="assets/images/logo-invert.PNG" alt="Logo Andy">
+            <img id="logo-home" class="h-12" src="assets/images/logo-invert.PNG" alt="Logo Andy">
         </a>
         
         <div class="block lg:hidden">
@@ -57,7 +58,7 @@
         </a>
     </section>
 
-    <section class="flex flex-col lg:flex-row lg:justify-around lg:p-2 lg:bg-neutral-900">
+    <section id="about-me-section" class="flex flex-col lg:flex-row lg:justify-around lg:p-px lg:bg-neutral-900">
         <div id="about-me" class="bg-neutral-900 h-screen text-white px-3 bg-black flex flex-col justify-center items-center gap-y-2 lg:w-[40%]">
             <img src="https://cdn.pixabay.com/photo/2019/08/10/02/34/am-4396115_960_720.png" alt="Imagen mobile" class="h-1/4 mx-auto">
             <h2 class="text-xl font-bold">Sobre mí</h2>
@@ -69,9 +70,9 @@
             </p>
         </div>
     
-        <div id="hobbies" class="h-screen bg-neutral-800 flex flex-col justify-center gap-y-2 lg:w-[40%] lg:bg-neutral-900">
+        <div id="hobbies" class="h-screen bg-neutral-800 flex flex-col justify-center lg:w-[40%] lg:bg-neutral-900">
             <h3 class="text-xl font-bold text-white text-center mt-8">Hobbies</h3>
-            <div class="slide-hobbies h-fit flex gap-4 p-4 snap-x overflow-x-auto text-white">
+            <div class="slide-hobbies h-[80%] flex gap-4 p-4 snap-x overflow-x-auto text-white">
                 <div class="snap-center shrink-0 w-full rounded overflow-hidden shadow-md border border-white shadow-neutral-700 p-px flex flex-col gap-y-4 p-3">
                     <p class="text-justify">
                         Además de la programación, soy amante de la cocina. Constantemente estoy en busca de recetas 
@@ -104,12 +105,19 @@
         </div>
     </section>
 
-    <footer id="contact" class="w-full bg-neutral-800 text-white flex flex-col  justify-around items-center border-t-2 border-[#8a8a8a]">
-        <h3 class="text-md font-semibold">Contacto</h3>
-        <p>Autor: Andrea S.Rivera</p>
-        <a href="mailto:andreaserriv983@gmail.com">
-            <p>Email: andreaserriv983@gmail.com</p>
-        </a>
+    <footer id="contact" class="w-full bg-neutral-800 text-white p-2 flex flex-col justify-around items-center border-t-2 border-[#8a8a8a]">
+        <h3 class="text-xl lg:text-2xl font-bold italic">Contacto</h3>
+        <p class="text-lg lg:text-xl">Autor: Andrea S.Rivera</p>
+        <div id="contact-mail" class="font-semibold text-md lg:text-lg">
+            <a href="mailto:andreaserriv983@gmail.com">
+                <i class="far fa-envelope"> andreaserriv983@gmail.com</i>
+            </a>
+        </div>
+        <div id="contact-github" class="font-semibold text-md lg:text-lg"> 
+            <a href="https://github.com/AndreaSerrano" target="_blank">
+                <i class="fab fa-github"> Andrea Serrano</i>
+            </a>
+        </div>
     </footer>
 
     <script src="assets/js/app.js"></script>
