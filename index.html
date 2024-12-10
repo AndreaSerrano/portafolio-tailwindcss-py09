@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!--Inicia Menú-->
     <nav class="w-full bg-[#1F4C57] font-semibold px-2 flex justify-between items-center flex-wrap fixed">
         <a href="" class="w-2/5">
             <img id="logo-home" class="h-12" src="assets/images/logo-invert.PNG" alt="Logo Andy">
@@ -35,7 +36,7 @@
                 <a href="#hobbies" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-green-400 mr-4 lg:hover:border-b-2 lg:hover:border-green-400 lg:hidden">
                     Hobbies
                 </a>
-                <a href="#portfolio" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-green-400 mr-4 lg:hover:border-b-2 lg:hover:border-green-400">
+                <a href="#my-job" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-green-400 mr-4 lg:hover:border-b-2 lg:hover:border-green-400">
                     Mi trabajo
                 </a>
                 <a href="#contact" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-green-400 mr-4 lg:hover:border-b-2 lg:hover:border-green-400">
@@ -56,8 +57,10 @@
         </div>
     </section>
 
-    <section id="about-me-section" class="flex flex-col lg:flex-row lg:justify-around lg:p-px bg-[#6CABB7]">
-        <div id="about-me" class="h-screen text-white px-3 flex flex-col justify-center items-center gap-y-2 lg:w-[40%]">
+    <!--Inicia Sección Princial (sobre mí y hobbies)-->    
+    <section id="about-me-section" class="flex flex-col lg:flex-row lg:justify-around lg:p-px lg:w-full bg-[#6CABB7]">
+        <!--Inicia Sobre mí)--> 
+        <div id="about-me" class="h-screen text-white px-3 flex flex-col justify-center items-center gap-y-2 lg:w-1/2">
             <img src="https://cdn.pixabay.com/photo/2019/08/10/02/34/am-4396115_960_720.png" alt="Imagen mobile" class="h-1/4 mx-auto">
             <h2 class="text-xl font-bold">Sobre mí</h2>
             <p class="text-justify p-px">
@@ -69,33 +72,33 @@
                 El análisis de datos y desarrollo web son mis principales intereses aunque no me cierro al conocimiento en otras ramas.
             </p>
         </div>
-    
-        <div id="hobbies" class="h-fit bg-[#306E7B]  flex flex-col justify-center gap-y-2 lg:w-1/2 lg:h-4/5">
-            <h3 class="text-xl font-bold text-white text-center mt-8">Pasatiempos</h3>
-            <div class="slide-hobbies h-[80%] flex gap-4 p-4 snap-x overflow-x-auto text-white">
-                <div class="snap-center shrink-0 w-full rounded overflow-hidden shadow-md border border-white shadow-neutral-700 p-px flex flex-col gap-y-4 p-3">
+        <!--Inicia Hobbies)--> 
+        <div id="hobbies" class="h-screen bg-[#306E7B] py-10 flex flex-col justify-center gap-y-4 lg:w-1/2">
+            <h3 class="text-xl font-bold text-white text-center mt-8">Hobbies</h3>
+            <div class="slide-hobbies h-full flex p-4 snap-x overflow-x-auto text-white lg:h-screen">
+                <div class="snap-center shrink-0 w-full rounded overflow-hidden shadow-md border border-white shadow-neutral-700 p-5 flex flex-col items-center justify-center p-3">
                     <p class="text-justify">
                         Además de la programación, soy amante de la cocina. Constantemente estoy en busca de recetas 
                         nuevas para cocinar y, por su puesto, probarlas (mi parte favorita). 
                     </p>
-                    <img src="./assets/images/hobbie-cook.jpg" alt="Imagen cocina">
+                    <img src="./assets/images/hobbie-cook.jpg" alt="Imagen cocina" class="h-auto">
                 </div>
-                <div class="snap-center shrink-0 w-full rounded overflow-hidden border border-white shadow-md shadow-neutral-700 p-px flex flex-col gap-y-4 p-3">
-                    <p class="text-center">
+                <div class="snap-center shrink-0 w-full rounded overflow-hidden shadow-md border border-white shadow-neutral-700 p-5 flex flex-col items-center justify-center p-3">
+                    <p class="text-justify">
                         La mayoría del tiempo me verás con audífonos. Ya sea escuchando música o podcasts, ayuda a mi 
                         concentración. Si tienes alguna recomendación musical o algo por el estilo, no dudes en hacerlo :)
                     </p>
                     <img src="./assets/images/hobbie-music.JPG" alt="Imagen música">
                 </div>                   
-                <div class="snap-center shrink-0 w-full rounded overflow-hidden border border-white shadow-md shadow-neutral-700 p-px flex flex-col gap-y-4 p-3">
-                    <p>
+                <div class="snap-center shrink-0 w-full rounded overflow-hidden shadow-md border border-white shadow-neutral-700 p-5 flex flex-col items-center justify-center p-3">
+                    <p class="text-justify">
                         Suelo ver demasiadas series y películas, mis preferidas son las de terror y thrillers. También me 
                         gustan los documentales de cualquier tema. 
                     </p>
                     <img src="./assets/images/hobbie-series.JPG" alt="Imagen series">
                 </div>
-                <div class="snap-center shrink-0 w-full rounded overflow-hidden border border-white shadow-md shadow-neutral-700 p-px flex flex-col gap-y-4 p-3">
-                    <p>
+                <div class="snap-center shrink-0 w-full rounded overflow-hidden shadow-md border border-white shadow-neutral-700 p-5 flex flex-col items-center justify-center p-3">
+                    <p class="text-justify">
                         Prefiero mil veces quedarme en casa a hacer cualquier cosa que salir de fiesta. Me gusta la 
                         tranquilidad y comodidad del hogar aunque no está mal salir de vez en cuando a divertirse.
                     </p>
@@ -104,7 +107,47 @@
             </div>
         </div>
     </section>
-
+    <section id="my-job" class="flex flex-col lg:flex-row lg:justify-around lg:p-px lg:w-full bg-[#6CABB7]">
+        <!--Inicia Mi Trabajo)--> 
+        <div id="my-job" class="h-screen bg-[#6CABB7] py-10 flex flex-col justify-center gap-y-4 lg:w-1/2">
+            <h3 class="text-xl font-bold text-white text-center mt-8">Mi Trabajo</h3>
+            <div class="slide-my-job h-full flex p-4 snap-x overflow-x-auto text-white lg:h-screen">
+                <div class="snap-center shrink-0 w-full rounded overflow-hidden shadow-md border border-white shadow-neutral-700 p-5 flex flex-col items-center justify-center p-3">
+                    <p class="text-justify">
+                        Desarrollo de sitios web básicos como este que estás viendo.
+                        Tecnologías utilizadas: HTML5, JS, CSS y Tailwind como principal framework front-end.
+                    </p>
+                    <img src="./assets/images/myjob/web-developer.jpg" alt="Imagen cocina" class="h-auto">
+                </div>
+                <div class="snap-center shrink-0 w-full rounded overflow-hidden shadow-md border border-white shadow-neutral-700 p-5 flex flex-col items-center justify-center p-3">
+                    <p class="text-justify">
+                        Manejo de datos: Limpieza, exportación e importación, consultas.
+                        Excel, Google Sheets - Limpieza de datos
+                        SQL Management Studio - Exportación, importación y consulta de información.
+                        Look Studio, Power BI - Creación de dashboards sencillos.
+                    </p>
+                    <img src="./assets/images/myjob/data.jpg" alt="Imagen música">
+                </div>                   
+                <div class="snap-center shrink-0 w-full rounded overflow-hidden shadow-md border border-white shadow-neutral-700 p-5 flex flex-col items-center justify-center p-3">
+                    <p class="text-justify">
+                        Pruebas a nivel usuario.
+                        Estas pruebas son sencillas ya que solo me limitaba a ponerme en el lugar del usuario final. Seguía una matriz con diferentes casos para corroborar
+                        que se siguiera el flujo correcto. 
+                        Pruebas realizadas con chatbots de whatsapp y formularios web.
+                    </p>
+                    <img src="./assets/images/myjob/chat.jpg" alt="Imagen series">
+                </div>
+                <div class="snap-center shrink-0 w-full rounded overflow-hidden shadow-md border border-white shadow-neutral-700 p-5 flex flex-col items-center justify-center p-3">
+                    <p class="text-justify">
+                        Soporte técnico básico.
+                        Resolución de problemas en la red, fallas con los equipos de los usuarios como laptops e impresoras.
+                    </p>
+                    <img src="./assets/images/myjob/computer.jpg" alt="Imagen casa">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Inicia Footer-->
     <footer id="contact" class="w-full bg-[#1F4C57] text-white p-2 flex flex-col justify-around items-center border-t-2 border-[#8a8a8a]">
         <h3 class="text-xl lg:text-2xl font-bold italic">Contacto</h3>
         <p class="text-lg lg:text-xl">Autor: Andrea Serrano Rivera</p>
