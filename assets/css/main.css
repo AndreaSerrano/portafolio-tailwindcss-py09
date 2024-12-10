@@ -15,6 +15,6 @@ border-radius: 5px;
 }
 
 #hero-home-image{
-  background-image: url("https://cdn.pixabay.com/photo/2022/01/14/07/48/digitization-6936701_1280.jpg");
+  background-image: url("../images/bg-hero-home.png");
   background-size: cover;
 }
